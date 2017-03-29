@@ -1,0 +1,12 @@
+/Users/patrickcumayas/NetBeansProjects/movieplex-pc/src/main/java/com/soa/movieplex/entities/Movie.java
+/Users/patrickcumayas/NetBeansProjects/movieplex-pc/src/main/java/com/soa/movieplex/entities/Timeslot.java
+/Users/patrickcumayas/NetBeansProjects/movieplex-pc/src/main/java/com/soa/movieplex/rest/ShowTimingFacadeREST.java
+/Users/patrickcumayas/NetBeansProjects/movieplex-pc/src/main/java/com/soa/movieplex/client/MovieClientBean.java
+/Users/patrickcumayas/NetBeansProjects/movieplex-pc/src/main/java/com/soa/movieplex/rest/MovieFacadeREST.java
+/Users/patrickcumayas/NetBeansProjects/movieplex-pc/src/main/java/com/soa/movieplex/rest/ApplicationConfig.java
+/Users/patrickcumayas/NetBeansProjects/movieplex-pc/src/main/java/com/soa/movieplex/entities/Theater.java
+/Users/patrickcumayas/NetBeansProjects/movieplex-pc/src/main/java/com/soa/movieplex/rest/AbstractFacade.java
+/Users/patrickcumayas/NetBeansProjects/movieplex-pc/src/main/java/com/soa/movieplex/rest/TheaterFacadeREST.java
+/Users/patrickcumayas/NetBeansProjects/movieplex-pc/src/main/java/com/soa/movieplex/entities/ShowTiming.java
+/Users/patrickcumayas/NetBeansProjects/movieplex-pc/src/main/java/com/soa/movieplex/rest/TimeslotFacadeREST.java
+/Users/patrickcumayas/NetBeansProjects/movieplex-pc/src/main/java/com/soa/movieplex/client/MovieBackingBean.java
