@@ -6,23 +6,24 @@
 package com.soa.movieplex.entities;
 
 import java.io.Serializable;
-import static java.lang.reflect.Array.set;
-import java.util.Collection;
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import java.util.Collection;
+import javax.persistence.CascadeType;
+import javax.persistence.OneToMany;
 
 /**
  *
- * @author patrickcumayas
+ * @author Patrick Cumayas
  */
 @Entity
 @Table(name = "MOVIES")
@@ -77,7 +78,7 @@ public class Movie implements Serializable {
  this.actors = actors;
  }
  @XmlTransient
- public Collection<ShowTiming> getShowTimings() {
+  public Collection<ShowTiming> getShowTimings() {
  return showTimings;
  }
  public void setShowTimings(Collection<ShowTiming> showTimings) {

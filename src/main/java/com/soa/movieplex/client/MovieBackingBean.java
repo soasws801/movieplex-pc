@@ -11,13 +11,31 @@ import javax.inject.Named;
 
 /**
  *
- * @author patrickcumayas
+ * @author Patrick Cumayas
  */
 @Named
 @SessionScoped
 public class MovieBackingBean implements Serializable{
     int movieId;
+    String movieName;
 
+    public void setMovieName(String movieName) {
+        this.movieName = movieName;
+    }
+
+    public void setActors(String actors) {
+        this.actors = actors;
+    }
+
+    public String getMovieName() {
+        return movieName;
+    }
+
+    public String getActors() {
+        return actors;
+    }
+    String actors;
+    
     public int getMovieId() {
         return movieId;
     }
@@ -25,5 +43,4 @@ public class MovieBackingBean implements Serializable{
     public void setMovieId(int movieId) {
         this.movieId = movieId;
     }
-    
 }

@@ -10,6 +10,8 @@ import java.util.Collection;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
@@ -22,19 +24,17 @@ import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
- * @author patrickcumayas1
+ * @author Patrick Cumayas
  */
 @Entity
 @Table(name = "TIMESLOTS")
 @XmlRootElement
 @NamedQueries({
- @NamedQuery(name = "Timeslot.findAll", query = "SELECT t FROM Timeslot t"),
- @NamedQuery(name = "Timeslot.findById",
+ @NamedQuery(name = "Timeslot.findAll", query = "SELECT t FROM Timeslot t"), 
+    @NamedQuery(name = "Timeslot.findById",
  query = "SELECT t FROM Timeslot t WHERE t.id = :id"),
- @NamedQuery(name = "Timeslot.findByStartTime",
- query = "SELECT t FROM Timeslot t WHERE t.startTime = :startTime"),
- @NamedQuery(name = "Timeslot.findByEndTime",
- query = "SELECT t FROM Timeslot t WHERE t.endTime = :endTime")})
+ @NamedQuery(name = "Timeslot.findByStartTime", query = "SELECT t FROM Timeslot t WHERE t.startTime = :startTime"),
+ @NamedQuery(name = "Timeslot.findByEndTime", query = "SELECT t FROM Timeslot t WHERE t.endTime = :endTime")})
 public class Timeslot implements Serializable {
  private static final long serialVersionUID = 1L;
  @Id

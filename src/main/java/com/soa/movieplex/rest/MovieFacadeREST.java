@@ -23,7 +23,7 @@ import javax.ws.rs.core.MediaType;
 
 /**
  *
- * @author patrickcumayas
+ * @author Patrick Cumayas
  */
 @Named
 @Stateless
@@ -66,6 +66,7 @@ public class MovieFacadeREST extends AbstractFacade<Movie> {
 
     @GET
     @Override
+    @Path("findall")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public List<Movie> findAll() {
         return super.findAll();
@@ -88,6 +89,12 @@ public class MovieFacadeREST extends AbstractFacade<Movie> {
     @Override
     protected EntityManager getEntityManager() {
         return em;
+    }
+    
+    @GET
+    @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
+    public List<Movie> getAll(){
+        return super.findAll();
     }
     
 }

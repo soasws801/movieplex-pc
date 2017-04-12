@@ -23,7 +23,7 @@ import javax.ws.rs.core.MediaType;
 
 /**
  *
- * @author patrickcumayas
+ * @author Patrick Cumayas
  */
 @Named
 @Stateless
@@ -66,6 +66,7 @@ public class TimeslotFacadeREST extends AbstractFacade<Timeslot> {
 
     @GET
     @Override
+    @Path("findall")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public List<Timeslot> findAll() {
         return super.findAll();
@@ -88,6 +89,12 @@ public class TimeslotFacadeREST extends AbstractFacade<Timeslot> {
     @Override
     protected EntityManager getEntityManager() {
         return em;
+    }
+    
+    @GET
+    @Produces({"application/xml","application/json"})
+    public List<Timeslot> getAll(){
+        return super.findAll();
     }
     
 }

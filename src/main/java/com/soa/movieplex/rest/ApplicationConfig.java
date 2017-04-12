@@ -10,7 +10,7 @@ import javax.ws.rs.core.Application;
 
 /**
  *
- * @author patrickcumayas
+ * @author Patrick Cumayas
  */
 @ApplicationPath("rest")
 public class ApplicationConfig extends Application {

@@ -23,7 +23,7 @@ import javax.ws.rs.core.MediaType;
 
 /**
  *
- * @author patrickcumayas
+ * @author Patrick Cumayas
  */
 @Named
 @Stateless
