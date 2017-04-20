@@ -6,7 +6,7 @@ import javax.persistence.metamodel.CollectionAttribute;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2017-04-12T19:13:20")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2017-04-19T20:21:14")
 @StaticMetamodel(Theater.class)
 public class Theater_ { 
 
